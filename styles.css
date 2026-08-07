@@ -16,7 +16,6 @@ body{
 
 }
 
-/* MENU */
 
 header{
 
@@ -31,6 +30,14 @@ header{
     z-index:1000;
 
 }
+#marcabellevue {
+    position: fixed !important; /* Força a posição independente do resto */
+    top: -5px !important;
+    left: 10px !important;
+  width: 105px;
+  height: auto;
+}
+
 
 .logo{
 
@@ -157,8 +164,6 @@ section h2{
 
 }
 
-
-
 /* CARDS */
 
 .cards{
@@ -203,17 +208,16 @@ section h2{
 
 }
 
-.grid > div:hover{
-    transform: translateY(-1.1);
-
-}
-
 .grid div{
 
     height:300px;
     background:#CBB89C;
     border-radius:8px;
 
+}
+
+.grid > div:hover{
+    transform: translateY(-3px);
 }
 
 /* CONTATO */
@@ -224,6 +228,8 @@ section h2{
 
 }
 
+
+
 footer{
 
     background:#2D1C16;
@@ -231,6 +237,10 @@ footer{
     text-align:center;
     padding:30px;
 
+}
+
+#insta{
+    width: 80px;
 }
 
 @media(max-width:900px){
