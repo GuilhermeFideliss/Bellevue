@@ -1,27 +1,320 @@
 <!DOCTYPE html>
-<html lang='pt-br '>
+<html lang="pt-BR">
+
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Galeria</title>
-    <link rel='stylesheet' href='styles.css'>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Galeria — Bellevue</title>
+
+    <link rel="icon" href="imgs/marcabellevue.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
-<body>
-    <section class="galeria" id="galeria">
 
-    <h2>Galeria</h2>
+<body class="gallery-page">
 
-    <div class="grid">
 
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+<header id="header">
+
+    <a href="index.html" class="brand">
+
+        <img
+            src="imgs/marcabellevue.png"
+            alt="Bellevue"
+        >
+
+        <span>Bellevue</span>
+
+    </a>
+
+
+    <nav>
+
+        <a href="index.html#sobre">Sobre</a>
+
+        <a href="index.html#servicos">Serviços</a>
+
+        <a href="galeria.html">Galeria</a>
+
+        <a href="index.html#contato">Contato</a>
+
+    </nav>
+
+
+    <button class="menu-button" aria-label="Abrir menu">
+
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+<main>
+
+    <section class="gallery-header">
+
+        <div class="section-label">
+            Arquivo Bellevue
+        </div>
+
+        <h1>
+            Nossa
+            <em>Galeria.</em>
+        </h1>
+
+        <p>
+            Uma seleção de momentos registrados pela Bellevue.
+            Eventos, pessoas e histórias transformadas em imagem.
+        </p>
+
+    </section>
+
+
+    <section class="gallery-section">
+
+
+        <div class="filters">
+
+            <button class="filter active" data-filter="all">
+                Todas
+            </button>
+
+            <button class="filter" data-filter="eventos">
+                Eventos
+            </button>
+
+            <button class="filter" data-filter="corporativo">
+                Corporativo
+            </button>
+
+            <button class="filter" data-filter="momentos">
+                Momentos
+            </button>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+
+            <article
+                class="gallery-card tall"
+                data-category="eventos"
+            >
+
+                <img
+                    src="imgs/PHOTO-3.jpg"
+                    alt="Evento Bellevue"
+                >
+
+                <div class="gallery-info">
+
+                    <h2>O encontro</h2>
+
+                    <span>Eventos · 2026</span>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="gallery-card"
+                data-category="corporativo"
+            >
+
+                <img
+                    src="imgs/PHOTO-2026-08-13-14-08-21.jpg"
+                    alt="Evento corporativo"
+                >
+
+                <div class="gallery-info">
+
+                    <h2>Presença</h2>
+
+                    <span>Corporativo · 2026</span>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="gallery-card"
+                data-category="momentos"
+            >
+
+                <img
+                    src="imgs/foto3.jpg"
+                    alt="Momento registrado"
+                >
+
+                <div class="gallery-info">
+
+                    <h2>Entre instantes</h2>
+
+                    <span>Momentos · 2026</span>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="gallery-card"
+                data-category="eventos"
+            >
+
+                <img
+                    src="imgs/foto4.jpg"
+                    alt="Evento"
+                >
+
+                <div class="gallery-info">
+
+                    <h2>Celebração</h2>
+
+                    <span>Eventos · 2026</span>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="gallery-card wide"
+                data-category="corporativo"
+            >
+
+                <img
+                    src="imgs/foto5.jpg"
+                    alt="Fotografia corporativa"
+                >
+
+                <div class="gallery-info">
+
+                    <h2>Construindo histórias</h2>
+
+                    <span>Corporativo · 2026</span>
+
+                </div>
+
+            </article>
+
+
+            <article
+                class="gallery-card"
+                data-category="momentos"
+            >
+
+                <img
+                    src="imgs/foto6.jpg"
+                    alt="Momento Bellevue"
+                >
+
+                <div class="gallery-info">
+
+                    <h2>Memória</h2>
+
+                    <span>Momentos · 2026</span>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+    <section class="gallery-end">
+
+        <span class="section-label">
+            Bellevue · Fotografia
+        </span>
+
+        <h2>
+            Toda história
+            <em>merece uma imagem.</em>
+        </h2>
+
+        <a href="index.html#contato" class="text-link">
+            Entre em contato
+            <span>↗</span>
+        </a>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-top">
+
+        <div>
+
+            <img
+                src="imgs/marcabellevue.png"
+                alt="Bellevue"
+                class="footer-logo"
+            >
+
+            <h2>Bellevue</h2>
+
+            <p>
+                Fotografia de eventos · Desde 2026
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <span>Siga</span>
+
+            <a
+                href="https://www.instagram.com/bellevuespro/"
+                target="_blank"
+            >
+                Instagram ↗
+            </a>
+
+        </div>
 
     </div>
 
-</section>
+
+    <div class="footer-bottom">
+
+        <span>© 2026 Bellevue</span>
+
+        <span>Todos os direitos reservados.</span>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
