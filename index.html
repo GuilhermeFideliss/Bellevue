@@ -1,132 +1,426 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bellevue Fotografia</title>
-    <link rel="icon" href="imgs/marcabellevue.png" type="image/x-icon" id="kakaka">
-    <link rel="stylesheet" href="styles.css">
+
+    <title>Bellevue — Fotografia de Eventos</title>
+
+    <link rel="icon" href="imgs/marcabellevue.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- libas dos malandro -->
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
 
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-
-   <!-- libas dos malandro -->
-
-<header>
-
-    <div class="logo">
-        Bellevue
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
 
-  <nav>
-    <img src="imgs/marcabellevue.png" id="marcabellevue" alt="Logo Bellevue"> 
-    <a href="#sobre">Sobre</a>
-    <a href="#servicos">Serviços</a>
-    <a href="galeria.html">Galeria</a>
-    <a href="#contato">Contato</a>
-</nav>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 
-</header>
+    <!-- HEADER -->
 
-<section class="hero">
+    <header id="header">
 
-    <div class="overlay"></div>
+        <a href="index.html" class="brand">
 
-    <div class="hero-text">
+            <img
+                src="imgs/marcabellevue.png"
+                alt="Bellevue"
+            >
 
-        <h1>Fotografias que atravessam gerações.</h1>
+            <span>Bellevue</span>
 
-        <p>
-         
-            Inspirada na elegância da Belle Époque, a Bellevue transforma cada evento em uma lembrança eterna através da fotografia artística.
-
-        </p>
-
-        <a href="galeria.html" class="botao">
-            Conheça nossa história
         </a>
 
-    </div>
+        <nav>
 
-</section>
+            <a href="#sobre">Sobre</a>
 
-<section class="sobre" id="sobre">
+            <a href="#servicos">Serviços</a>
 
-    <h2>Sobre a Bellevue</h2>
+            <a href="galeria.html">Galeria</a>
 
-    <p>
-        A Bellevue nasceu com o objetivo de ser uma empresa parceira, que não somente pratica fotografia, mas que registra momentos de empresas, com uma visão inovadora e diferenciada no mercado.
+            <a href="#contato">Contato</a>
 
-    </p>
+        </nav>
 
-</section>
+        <button class="menu-button" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+        </button>
 
-<section class="servicos" id="servicos">
+    </header>
 
-    <h2>Nossos Serviços</h2>
 
-    <div class="cards">
+    <!-- HERO -->
 
-        <div class="card">
-            <h3>Fotografias</h3>
-            <p>Objetivo de divulgar e fortalecer a imagem de sua empresa</p>
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-info">
+
+                <span class="label">
+                    Fotografia de eventos · Desde 2026
+                </span>
+
+                <h1>
+                    Memórias que
+                    <em>atravessam</em>
+                    gerações.
+                </h1>
+
+                <p>
+                    A Bellevue transforma momentos especiais
+                    em imagens que permanecem. Fotografia
+                    artística para eventos e empresas.
+                </p>
+
+                <a href="galeria.html" class="text-link">
+                    Conheça nosso trabalho
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+
+            <div class="hero-image">
+
+                <img
+                    src="./imgs/img_evento.jpeg"
+                    alt="Fotografia de evento"
+                >
+
+                <span class="image-caption">
+                    Bellevue · São Paulo · 2026
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRO -->
+
+        <section class="intro" id="sobre">
+
+            <div class="section-label">
+                01 — Nossa essência
+            </div>
+
+            <div class="intro-content">
+
+                <h2>
+                    Fotografar é
+                    <em>estar presente.</em>
+                </h2>
+
+                <div class="intro-text">
+
+                    <p>
+                        A Bellevue nasceu com o objetivo de ser
+                        uma empresa parceira, que não somente
+                        pratica fotografia, mas registra momentos
+                        importantes de empresas e pessoas com
+                        uma visão inovadora e diferenciada.
+                    </p>
+
+                    <p>
+                        Acreditamos que uma boa fotografia não
+                        precisa apenas mostrar o que aconteceu.
+                        Ela precisa fazer você sentir novamente
+                        aquilo que viveu.
+                    </p>
+
+                    <a href="#contato" class="text-link">
+                        Fale conosco
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMAGEM DESTACADA -->
+
+        <section class="featured">
+
+            <div class="featured-image">
+
+                <img
+                    src="imgs/PHOTO-2.jpg"
+                    alt="Registro Bellevue"
+                >
+
+            </div>
+
+            <div class="featured-caption">
+                <span>Registro nº 001</span>
+                <span>Eventos corporativos</span>
+            </div>
+
+        </section>
+
+
+        <!-- SERVIÇOS -->
+
+        <section class="services" id="servicos">
+
+            <div class="section-label">
+                02 — O que fazemos
+            </div>
+
+            <div class="services-header">
+
+                <h2>
+                    Nosso
+                    <em>trabalho.</em>
+                </h2>
+
+                <p>
+                    Imagens pensadas para comunicar,
+                    preservar e fortalecer a história
+                    de cada evento.
+                </p>
+
+            </div>
+
+
+            <div class="services-list">
+
+                <article class="service">
+
+                    <span class="service-number">01</span>
+
+                    <div>
+
+                        <h3>Fotografia</h3>
+
+                        <p>
+                            Registros profissionais para
+                            divulgar e fortalecer a imagem
+                            da sua empresa.
+                        </p>
+
+                    </div>
+
+                    <span class="service-arrow">↗</span>
+
+                </article>
+
+
+                <article class="service">
+
+                    <span class="service-number">02</span>
+
+                    <div>
+
+                        <h3>Eventos corporativos</h3>
+
+                        <p>
+                            Cobertura fotográfica completa
+                            para eventos, encontros,
+                            celebrações e experiências.
+                        </p>
+
+                    </div>
+
+                    <span class="service-arrow">↗</span>
+
+                </article>
+
+
+                <article class="service">
+
+                    <span class="service-number">03</span>
+
+                    <div>
+
+                        <h3>Identidade visual</h3>
+
+                        <p>
+                            Imagens alinhadas à identidade
+                            da sua marca para criar uma
+                            comunicação visual consistente.
+                        </p>
+
+                    </div>
+
+                    <span class="service-arrow">↗</span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- MOSAICO -->
+
+        <section class="mosaic">
+
+            <div class="mosaic-item large">
+
+                <img
+                    src="imgs/foto2.jpg"
+                    alt="Fotografia Bellevue"
+                >
+
+            </div>
+
+            <div class="mosaic-item small">
+
+                <img
+                    src="imgs/foto3.jpg"
+                    alt="Fotografia Bellevue"
+                >
+
+            </div>
+
+            <div class="mosaic-item small">
+
+                <img
+                    src="imgs/foto4.jpg"
+                    alt="Fotografia Bellevue"
+                >
+
+            </div>
+
+            <div class="mosaic-item large">
+
+                <img
+                    src="imgs/foto5.jpg"
+                    alt="Fotografia Bellevue"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIA CTA -->
+
+        <section class="gallery-cta">
+
+            <div class="section-label">
+                03 — Nosso trabalho
+            </div>
+
+            <h2>
+                Algumas histórias
+                <em>que já contamos.</em>
+            </h2>
+
+            <a href="galeria.html" class="outline-button">
+                Abrir galeria
+                <span>↗</span>
+            </a>
+
+        </section>
+
+
+        <!-- CONTATO -->
+
+        <section class="contact" id="contato">
+
+            <div class="section-label">
+                04 — Vamos conversar
+            </div>
+
+            <h2>
+                Seu evento
+                <em>merece ser lembrado.</em>
+            </h2>
+
+            <p>
+                Conte para nós sobre seu próximo evento.
+                Vamos criar imagens que façam essa história
+                permanecer.
+            </p>
+
+            <a
+                href="https://www.instagram.com/bellevuespro/"
+                target="_blank"
+                class="contact-button"
+            >
+                Fale com a Bellevue
+                <span>↗</span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-top">
+
+            <div>
+
+                <img
+                    src="imgs/marcabellevue.png"
+                    alt="Bellevue"
+                    class="footer-logo"
+                >
+
+                <h2>Bellevue</h2>
+
+                <p>
+                    Fotografia de eventos · Desde 2026
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <span>Contato</span>
+
+                <a href="https://www.instagram.com/bellevuespro/" target="_blank">
+                    Instagram ↗
+                </a>
+
+            </div>
+
         </div>
 
-        <!-- <div class="card">
-            <h3>????????</h3>
-            <p>rgfeo.</p>
-        </div> -->
 
-        <div class="card">
-            <h3>Eventos Corporativos</h3>
-            <p>Imagens profissionais para fortalecer a identidade da sua empresa.</p>
+        <div class="footer-bottom">
+
+            <span>© 2026 Bellevue</span>
+
+            <span>Fotografia de Eventos</span>
+
         </div>
 
-    </div>
-
-</section>
+    </footer>
 
 
-<section class="contato" id="contato">
-
-    <h2>Vamos registrar sua história?</h2>
-
-    <p>Entre em contato e descubra como podemos eternizar seu evento.</p>
-
-    <a href="#" class="botao">
-        Sobre nós
-    </a>
-
-</section>
-
-<footer>
-    <h2>Nossa rede social </h2>
-    <a href="https://www.instagram.com/bellevuespro?igsh=OXJibzRhd3Ixc3Nt" target="_blank">
-        <img id="insta" src="imgs/imagem (38).png" alt="instagram"/>
-    </a><br>
-    
-    <p>© 2026 Bellevue • Fotografia de Eventos</p>
-
-</footer>
+    <script src="script.js"></script>
 
 </body>
 </html>
